@@ -54,7 +54,7 @@ export function Apply() {
       <div className="relative mx-auto max-w-[1100px] grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
         <div>
           <div className="mono text-[10px] uppercase tracking-[0.3em] text-neon mb-4">
-            Final call / 007
+            Final call 
           </div>
           <h2 className="display text-balance text-[clamp(2.5rem,7vw,6rem)] leading-[0.88] uppercase mb-6">
             Your breakout
@@ -66,11 +66,11 @@ export function Apply() {
             <br />
             away.
           </h2>
-          <p className="font-serif text-lg md:text-xl text-muted-foreground max-w-lg">
-            Last season: <span className="text-foreground">1,200 applicants</span> for{" "}
-            <span className="text-foreground">50 spots</span>. Early-bird pricing
-            ends <span className="text-neon">March 14</span>.
-          </p>
+        <p className="font-serif text-lg md:text-xl text-muted-foreground max-w-lg">
+  Launch Season: <span className="text-foreground">100 designers</span> will be shortlisted for{" "}
+  <span className="text-foreground">10 finalist spots</span>. Apply by{" "}
+  <span className="text-neon">July 15</span> to secure your place.
+</p>
         </div>
 
         <form
@@ -81,14 +81,15 @@ export function Apply() {
             Designer application · Step 1 of 2
           </div>
           {sent ? (
-            <div className="py-12 text-center">
-              <div className="display text-3xl uppercase mb-3 text-neon">
-                You're in the queue.
-              </div>
-              <p className="font-serif text-muted-foreground">
-                Check your inbox for the portfolio upload link.
-              </p>
-            </div>
+<div className="py-12 text-center">
+  <div className="display text-3xl uppercase mb-3 text-neon">
+    Application Submitted.
+  </div>
+  <p className="font-serif text-muted-foreground">
+    Thank you for your submission. Our jury will review your portfolio, <br />
+    and we will update you on your application status via email.
+  </p>
+</div>
           ) : (
             <>
               <Field label="Name" name="name" placeholder="Your full name" />
@@ -109,10 +110,10 @@ export function Apply() {
                   defaultValue=""
                 >
                   <option value="" disabled>Select one</option>
-                  <option>Ready-to-wear</option>
-                  <option>Couture / Avant-garde</option>
-                  <option>Knitwear</option>
-                  <option>Digital / 3D</option>
+                  <option>Pret / Ready-to-Wear</option>
+<option>Luxury Formal / Couture</option>
+<option>Streetwear</option>
+<option>Sustainable Design</option>
                 </select>
               </div>
               <button
@@ -122,7 +123,7 @@ export function Apply() {
               >
                 <span className="relative block overflow-hidden">
                   <span className="glitch-label">
-                    {submitting ? "Submitting…" : "Pay entry fee & continue →"}
+                    {submitting ? "Submitting…" : " Continue →"}
                   </span>
                   <span className="glitch-hover">No excuses.</span>
                 </span>
@@ -133,7 +134,7 @@ export function Apply() {
                 </p>
               )}
               <p className="mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground text-center">
-                $50 early-bird · waivers available
+               PKR 5,000 processing fee - applicable only upon passing initial screening.
               </p>
             </>
           )}
