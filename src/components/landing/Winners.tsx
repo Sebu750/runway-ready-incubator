@@ -5,30 +5,30 @@ import w3 from "@/assets/winner-3.jpg";
 const W = [
   {
     img: w1,
-    name: "Maria Chen",
-    season: "S01 — 2023",
-    before: "Senior thesis, Parsons",
-    after: "Assistant Designer, Coach",
+    name: "The Emerging Visionary",
+    season: "Founding Class - 2026",
+    Background: "Final year student with a thesis ready to launch.",
+    Opportunity: "Creative Director of an Adorzia-funded label.",
     quote:
-      "Atelier got my portfolio in front of the right people. Three months later I was in a Coach studio.",
+      "I have the vision but lacked the capital. ADORZIA is the only platform providing 100% ownership with full production support.",
   },
   {
     img: w2,
-    name: "Daniel Okafor",
-    season: "S02 — 2024",
-    before: "Self-taught, Lagos",
-    after: "Founder, Okafor Studio · stocked at SSENSE",
+    name: "The Industry Pivot",
+    season: "Founding Class - 2026",
+    Background: "Working professional designing for major retail brands.",
+    Opportunity: "Independent Founder with a 50/50 profit-sharing partner.",
     quote:
-      "I didn't go to fashion school. The finale was the first time buyers ever saw my work.",
+      "I was tired of building someone else's brand. ADORZIA gives me the investment to finally build and own my own name.",
   },
   {
     img: w3,
-    name: "Lola Castellanos",
-    season: "S03 — 2025",
-    before: "Final year, Antwerp",
-    after: "Creative Director, Eckhaus Latta capsule",
+    name: "The Heritage Artisan",
+    season: "Founding Class - 2026",
+    Background: "Self-taught designer focused on traditional craft.",
+    Opportunity: "Marketplace-ready brand with a year of mentorship.",
     quote:
-      "The mentorship is the real prize. My judge still answers my texts at midnight.",
+      "he PKR 300K prize and manufacturing backing mean I can scale my artisanal craft without the financial risk of a startup.",
   },
 ];
 
@@ -39,15 +39,14 @@ export function Winners() {
         <div className="flex items-end justify-between flex-wrap gap-4 mb-16">
           <div>
             <div className="mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-4">
-              Alumni / 004
+            — The ADORZIA Legacy
             </div>
             <h2 className="display text-5xl md:text-7xl uppercase leading-[0.9]">
-              Before & after.
+              Who we are looking for.
             </h2>
           </div>
           <p className="font-serif text-muted-foreground text-lg max-w-md">
-            Three winners. Three career trajectories that didn't exist eighteen
-            months ago.
+            Ten finalists. Ten new trajectories defining the next era of Pakistani fashion.
           </p>
         </div>
 
