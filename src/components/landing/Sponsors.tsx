@@ -16,15 +16,15 @@ export function Sponsors() {
           <ul className="font-serif text-muted-foreground space-y-3 max-w-xl mb-8 text-lg">
             <li className="flex gap-3">
               <span className="text-neon mono text-xs mt-1.5">→</span>
-              First look at 100+ vetted designers before any agent gets near them.
+              Direct access to Pakistan’s top 100 shortlisted emerging designers.
             </li>
             <li className="flex gap-3">
               <span className="text-neon mono text-xs mt-1.5">→</span>
-              Embedded product placement in scored design challenges.
+              Exclusive brand integration in the Runway Finale and Jury Panel.
             </li>
             <li className="flex gap-3">
               <span className="text-neon mono text-xs mt-1.5">→</span>
-              Quarterly trend report on emerging silhouettes, fabrics, and references.
+              Anchor the launch of a new industrial standard as a Strategic Partner in the Adorzia Founding Designers Program.
             </li>
           </ul>
           <GlitchButton href="#prospectus" variant="outline" hoverText="Let's talk.">
@@ -36,9 +36,12 @@ export function Sponsors() {
             Tier Snapshot
           </div>
           {[
-            ["Founding", "$120K", "Naming rights · jury seat"],
-            ["Principal", "$60K", "Challenge sponsorship · onstage"],
-            ["Supporting", "$25K", "Logo · trend report · 4 seats"],
+ [
+  ["Industrial Partner", "Manufacturing", "Official Production Lead · Exclusive Factory-to-Runway Branding"],
+  ["Patron Partner", "Awards & Grants", "Title Sponsor of PKR 300K+ Prize · Founding Jury Residency"],
+  ["Logistics Partner", "Infrastructure", "Official Venue & Supply Chain Authority · On-Ground Operational Visibility"],
+  ["Media Partner", "Digital & PR", "Exclusive Domestic Coverage Lead · National Fashion News Integration"]
+]
           ].map(([t, p, d]) => (
             <div
               key={t}
