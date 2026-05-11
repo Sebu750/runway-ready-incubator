@@ -1,10 +1,10 @@
 import { GlitchButton } from "./GlitchButton";
 
 const DATES = [
-  { d: "Mar 14", l: "Early-bird entry closes", note: "$50 fee · save $100" },
-  { d: "May 02", l: "Final entry deadline", note: "All portfolios locked" },
-  { d: "Jun 10", l: "Semi-finalist announcement", note: "Top 30 published" },
-  { d: "Sep 18", l: "Live finale — Brooklyn Navy Yard", note: "Tickets on sale July" },
+  { d: "Jun 01", l: "Applications Open", note: "Registration portal live" },
+  { d: "Jul 15", l: "Application Deadline", note: "All portfolios locked" },
+  { d: "Aug 04", l: "Shortlist Announcement", note: "Top 100 designers published" },
+  { d: "Sep 14", l: "Runway Finale", note: "10 Finalists – Venue TBA" },
 ];
 
 export function Dates() {
