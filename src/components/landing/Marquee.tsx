@@ -1,7 +1,14 @@
 const PARTNERS = [
-  "SSENSE", "Mood Fabrics", "CLO 3D", "Vogue India",
-  "Parsons", "Central Saint Martins", "Première Vision",
-  "Highsnobiety", "i-D Magazine", "Antwerp Academy",
+  "Khaadi",
+  "Gul Ahmed Textile Mills",
+  "Sapphire ",
+  "PIFD Lahore",
+  "L'Oréal Pakistan",
+  "Nishat Linen",
+  "Fashion Pakistan Council",
+  "Depilex",
+  "TEVF",
+  "HSY Studio",
 ];
 
 export function Marquee() {
@@ -9,7 +16,7 @@ export function Marquee() {
   return (
     <section className="border-y border-border/60 bg-background py-6 overflow-hidden">
       <div className="mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground text-center mb-4">
-        In partnership with
+        Target Collaborations
       </div>
       <div className="marquee-fade overflow-hidden">
         <div className="ticker flex gap-12 whitespace-nowrap will-change-transform">
