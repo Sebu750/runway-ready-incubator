@@ -23,12 +23,12 @@ const QA = [
     a: "Every semi-finalist receives a 1:1 portfolio review with a jury member, access to our sponsor directory, and a year of priority entry to our workshops.",
   },
   {
-    q: "Is there a fee waiver?",
-    a: "Yes. Need-based waivers are granted no-questions-asked. There is a checkbox on the application form.",
+    q: "Are there any application fees?",
+    a: "There is a standard registration fee of 5000; however, need-based waivers are available to ensure talent is never sidelined by financial constraints.",
   },
   {
     q: "What categories can I enter?",
-    a: "Ready-to-wear, Couture/Avant-garde, Knitwear, and Digital/3D. You can enter one category per season.",
+    a: "We invite submissions in Ready-to-Wear, Luxury Couture, and Artisanal Streetwear. We prioritize Slow Fashion principles and exceptional craftsmanship that translates traditional techniques for a sophisticated Global audience.",
   },
 ];
 
