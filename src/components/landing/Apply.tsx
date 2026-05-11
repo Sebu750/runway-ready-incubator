@@ -118,9 +118,9 @@ export function Apply() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="glitch-btn w-full mono text-xs uppercase tracking-[0.2em] bg-neon text-neon-foreground border border-neon px-5 py-4"
+                className="glitch-btn w-full mono text-[11px] sm:text-xs uppercase tracking-[0.2em] bg-neon text-neon-foreground border border-neon px-5 py-4"
               >
-                <span className="relative block">
+                <span className="relative block overflow-hidden">
                   <span className="glitch-label">
                     {submitting ? "Submitting…" : "Pay entry fee & continue →"}
                   </span>
