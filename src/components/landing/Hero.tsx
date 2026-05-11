@@ -19,9 +19,9 @@ export function Hero() {
         <div className="mx-auto max-w-[1400px] flex items-center justify-between mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse" />
-            Season 04 — Applications open
+           Launch Season — Applications open
           </span>
-          <span className="hidden md:block">New York · Paris · Tokyo</span>
+          <span className="hidden md:block">Lahore · Karachi · Islamabad</span>
         </div>
       </div>
 
@@ -38,8 +38,7 @@ export function Hero() {
           <p className="mt-6 sm:mt-8 max-w-xl font-serif text-base sm:text-lg md:text-xl text-muted-foreground leading-snug">
             3 rounds. 10 finalists. 1 winner.
             <br />
-            Judged by Zara's former Head of Design and the team behind Loewe's
-            graduate program.
+            Judged by leading Creative Directors from Pakistan’s premier fashion houses and veteran mentors from the country's top-tier design institutes.
           </p>
 
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 sm:gap-4">
@@ -50,7 +49,7 @@ export function Hero() {
               hoverText="No excuses."
             >
               <span className="sm:hidden">Apply Now ↓</span>
-              <span className="hidden sm:inline">Apply Now — Early bird ends Mar 14</span>
+              <span className="hidden sm:inline">Apply Now — Registration opens June 1st</span>
             </GlitchButton>
             <GlitchButton
               href="#prospectus"
@@ -64,10 +63,10 @@ export function Hero() {
 
           <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-6 max-w-xl border-t border-border/60 pt-6">
             {[
-              ["$50K", "Cash prize"],
-              ["12", "Industry judges"],
-              ["1,200+", "S03 applicants"],
-            ].map(([n, l]) => (
+  ["300K", "PKR Grand Prize"],
+  ["100", "Shortlisted Designers"],
+  ["10", "Finalist Spots"],
+].map(([n, l]) => (
               <div key={l}>
                 <div className="display text-xl sm:text-2xl md:text-3xl">{n}</div>
                 <div className="mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
