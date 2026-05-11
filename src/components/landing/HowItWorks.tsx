@@ -1,23 +1,23 @@
 const STEPS = [
-  {
-    n: "01",
-    title: "Submit 3 looks",
-    body: "Upload your portfolio, sketches, and a 60-second concept reel. $50 entry, waived for need-based applicants.",
+  { 
+    n: "01", 
+    t: "Digital Scouting", 
+    d: "Applications open June 1st. Submit your portfolio and creative vision. Our internal panel screens candidates to shortlist the Elite 100." 
   },
-  {
-    n: "02",
-    title: "Judges score. Public votes.",
-    body: "Top 30 advance through blind industry scoring weighted 70/30 against the public vote.",
+  { 
+    n: "02", 
+    t: "Curation & Jury Review", 
+    d: "Pakistan's premier Creative Directors and academic veterans evaluate the Top 100, selecting 10 finalists based on craft and global appeal." 
   },
-  {
-    n: "03",
-    title: "Build the capsule",
-    body: "10 finalists get a $2K fabric grant, a CLO 3D license, and 8 weeks to produce three runway-ready looks.",
+  { 
+    n: "03", 
+    t: "The Runway Finale", 
+    d: "September 14th showcase. Finalists present their collections to a panel of influencers and stakeholders to crown the Season winner." 
   },
-  {
-    n: "04",
-    title: "Live finale, New York",
-    body: "Walk the runway in front of buyers, press, and our jury. One winner takes the $50K and the mentorship.",
+  { 
+    n: "04", 
+    t: "Operational Partnership", 
+    d: "The winner claims PKR 300K. All Top 10 finalists transition into a 3 Season funded manufacturing and global marketplace agreement." 
   },
 ];
 
@@ -37,8 +37,7 @@ export function HowItWorks() {
             </h2>
           </div>
           <p className="font-serif text-lg text-muted-foreground max-w-md">
-            We strip away the gatekeepers. No agent, no MFA, no Manhattan rent
-            required — just the work.
+"We bridge the void between raw talent and the global market. No legacy gatekeepers, no exclusive barriers, no overhead constraints — just the purity of your craft and the infrastructure to scale it."
           </p>
         </div>
 
