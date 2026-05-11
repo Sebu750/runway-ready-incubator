@@ -1,8 +1,46 @@
 import { useState } from "react";
 import { GlitchButton } from "./GlitchButton";
+import { supabase } from "@/integrations/supabase/client";
+import { z } from "zod";
+
+const applicationSchema = z.object({
+  name: z.string().trim().min(1, "Name required").max(100),
+  email: z.string().trim().email("Invalid email").max(255),
+  portfolio: z.string().trim().min(1, "Portfolio required").max(500),
+  category: z.string().trim().min(1, "Select a category").max(100),
+});
 
 export function Apply() {
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [submitting, setSubmitting] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError(null);
+    const fd = new FormData(e.currentTarget);
+    const parsed = applicationSchema.safeParse({
+      name: fd.get("name"),
+      email: fd.get("email"),
+      portfolio: fd.get("portfolio"),
+      category: fd.get("category"),
+    });
+    if (!parsed.success) {
+      setError(parsed.error.issues[0]?.message ?? "Invalid input");
+      return;
+    }
+    setSubmitting(true);
+    const { error: dbError } = await supabase
+      .from("applications")
+      .insert(parsed.data);
+    setSubmitting(false);
+    if (dbError) {
+      setError("Something went wrong. Please try again.");
+      return;
+    }
+    setSent(true);
+  }
+
   return (
     <section
       id="apply"
@@ -36,10 +74,7 @@ export function Apply() {
         </div>
 
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setSent(true);
-          }}
+          onSubmit={handleSubmit}
           className="bg-card border border-border p-8 md:p-10 space-y-5"
         >
           <div className="mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
@@ -82,13 +117,21 @@ export function Apply() {
               </div>
               <button
                 type="submit"
+                disabled={submitting}
                 className="glitch-btn w-full mono text-xs uppercase tracking-[0.2em] bg-neon text-neon-foreground border border-neon px-5 py-4"
               >
                 <span className="relative block">
-                  <span className="glitch-label">Pay entry fee & continue →</span>
+                  <span className="glitch-label">
+                    {submitting ? "Submitting…" : "Pay entry fee & continue →"}
+                  </span>
                   <span className="glitch-hover">No excuses.</span>
                 </span>
               </button>
+              {error && (
+                <p className="mono text-[10px] uppercase tracking-[0.2em] text-neon text-center">
+                  {error}
+                </p>
+              )}
               <p className="mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground text-center">
                 $50 early-bird · waivers available
               </p>
