@@ -1,12 +1,30 @@
 import { GlitchButton } from "./GlitchButton";
 
 const PERKS = [
-  { k: "$50,000", v: "Cash prize, no strings, no equity." },
-  { k: "$15K Fabric Grant", v: "Sourced through Mood Fabrics + a Première Vision Paris sourcing trip." },
-  { k: "12-Month Mentorship", v: "Monthly 1:1s with a CFDA designer (announced at semi-finals)." },
-  { k: "Marketplace Drop", v: "We produce your winning capsule. You keep 70% of sales — forever." },
-  { k: "Editorial", v: "Cover feature in our Season Book. Distributed to 400 buyers + 80 editors." },
-  { k: "Studio Residency", v: "3 months in our Bushwick studio. Industrial machines, pattern tables, mailing address." },
+  { 
+    k: "PKR 300K", 
+    v: "Cash prize awarded to the Top 1 winner to accelerate their brand's growth." 
+  },
+  { 
+    k: "100%", 
+    v: "Ownership. You remain the sole legal owner of your brand, trademarks, and IP." 
+  },
+  { 
+    k: "3 Seasons", 
+    v: "Strategic Collaboration. Guaranteed production and funding across three consecutive collection cycles." 
+  },
+  { 
+    k: "50%", 
+    v: "Profit share. Net profit split after all production and marketing expenses are recovered." 
+  },
+  { 
+    k: "Market", 
+    v: "Global Launch. Exclusive featured collection drop on the ADORZIA digital marketplace." 
+  },
+  { 
+    k: "Runway", 
+    v: "Fall 2026. Professional showcase for the Top 10 finalists on September 14th." 
+  },
 ];
 
 export function Prize() {
@@ -16,7 +34,7 @@ export function Prize() {
         <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20 items-start">
           <div className="lg:sticky lg:top-28">
             <div className="mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-4">
-              For Designers / 002
+              For Designers 
             </div>
             <h2 className="display text-5xl md:text-7xl uppercase leading-[0.9] mb-8">
               The prize is
@@ -26,8 +44,7 @@ export function Prize() {
               the prize.
             </h2>
             <p className="font-serif text-lg text-muted-foreground mb-8 max-w-md">
-              $50,000 buys six months of rent. The relationships you walk away
-              with buy the next ten years.
+            Most competitions hand you a check and a photo op. We hand you a year of access to the people who decide which collections get bought, photographed, and worn.
             </p>
             <GlitchButton variant="neon" size="lg" hoverText="No excuses.">
               Apply Now →
