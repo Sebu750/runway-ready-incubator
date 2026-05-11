@@ -11,10 +11,17 @@ export function Footer() {
           </p>
         </div>
         {[
-          ["Competition", ["Apply", "Prospectus", "Judges", "Rules"]],
-          ["Brands", ["Sponsor", "Partner", "Press kit", "Trend report"]],
-          ["Contact", ["hello@atelier00.co", "Instagram", "LinkedIn", "TikTok"]],
-        ].map(([h, items]) => (
+  ["Program", ["Apply", "Founding Designers", "Jury", "Guidelines"]],
+  ["Industry", ["Sponsorship", "Partnership", "Media Kit", "News Hub"]],
+  ["Contact", [
+    "hello@adorzia.com",
+    /* Update specific URLs below when accounts are finalized */
+    "Instagram", // https://www.instagram.com/adorziaofficial
+    "LinkedIn",  // https://www.linkedin.com/company/adorzia
+    "TikTok",    // https://www.tiktok.com/@adorzia
+    "WhatsApp"   // https://wa.me/your_number_her
+  ]],
+].map(([h, items]) => (
           <div key={h as string}>
             <div className="mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-4">
               {h as string}
@@ -32,7 +39,7 @@ export function Footer() {
         ))}
       </div>
       <div className="mx-auto max-w-[1400px] mt-12 pt-6 border-t border-border/40 flex flex-wrap items-center justify-between gap-3 mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-        <span>© 2026 Atelier/00 — Brooklyn, NY</span>
+        <span>© 2026 Spotlight by Adorzia · Lahore, Pakistan</span>
         <span>Built for designers, not gatekeepers.</span>
       </div>
     </footer>
